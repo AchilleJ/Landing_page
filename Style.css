@@ -81,40 +81,91 @@ header h1{
 /* 3 description section of the car */
 
 
-
-
 .description_sections section{
 	display: flex;
 	flex-direction: row;
 }
 
 .description_sections article{
-	width: 55%;	
+	width: 50%;	
 }
 
 .description_sections img{
 	width: 100%;
+
 }
 
 .description_sections .article_texte{
-	width: 40%;
-	margin: 5% 7% 0% 7%;
+	width: 50%;
+}
+
+.description_sections .article_texte .largeur_texte{
+	width: 85%;
+	margin: auto;
+	margin-top: 5%;
 }
 
 .description_sections h2{
-	margin: 0;
 	font-weight: normal;
-	font-size: 40pt;
+	font-size: 30pt;
 	line-height: 90%;
+	margin: 0;
 
 }
 .description_sections h3{
 	font-weight: normal;
-	font-size: 15pt;
+	font-size: 12pt;
+	margin-top: 0;
+
 }
 
 .description_sections p{
-	font-size: 20pt;
+	font-size: 15pt;
+
+}
+
+/*section 2*/
+.description_sections .article_texte .largeur_texte div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+.description_sections .article_texte .largeur_texte .div4{
+	border-bottom: none;
+}
+
+.description_sections .caractéristique1{
+	width: 45%;
+}
+.description_sections .caractéristique2{
+	width: 48%;
+}
+.description_sections .caractéristique3{
+	width: 53%;
+}
+.description_sections .caractéristique4{
+	width: 60%;
+}
+
+
+
+
+/*section 3*/
+.images_hover{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.images_hover a{
+	width: 50%;
+	opacity: 0.5;
+}
+
+.images_hover a:hover {
+	opacity: 1;
 }
 
 
