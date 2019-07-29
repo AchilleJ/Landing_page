@@ -168,6 +168,55 @@ header h1{
 	opacity: 1;
 }
 
+/*footer achille*/
+
+ .footer .elements_footer{
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	width: 85%;
+ 	margin: auto;
+ }
+
+ .footer{
+ 	background-color: black;
+ 	padding: 2% 0%;
+ }
+
+ .footer .a_propos{
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	width: 45%;
+ }
+
+ .footer ul{
+ 	color: white;
+ 	list-style: none;
+ 	padding: 0;
+ }
+
+  .footer li{
+  	padding-bottom: 3%;
+ }
+
+ .footer h3{
+ 	color: white;
+ 	font-size: 16pt
+ }
+
+ .footer .conditions{
+ 	width: 50%;
+ }
+
+.footer .réseau{
+	display: flex;
+	justify-content: space-between;
+}
+.footer a{
+	text-decoration: none;
+	color: white;
+}
 
 
 /*main*/
