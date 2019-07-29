@@ -224,43 +224,73 @@ header h1{
 	background-image: url("images/image4.png");
 	background-repeat: no-repeat; 
 	background-size: 100%;
+	min-height: 600px;
+	
 }
 	
 #reservation h2{
     font-size:  55px;
 	color: black;
 	font-family:'Playfair Display', serif;
-	margin: 50px;
-	padding: 40px; 
+	margin: 0050px;
 	position: relative;
-	top: 50px;
+	top: 110px;
 	left: 0px;
 	line-height: 30px;
 
 }
 #reservation p{
-    position: relative;
-    margin: 50px;
+	position: relative;
+    margin: 50px 100px 0 0px;
 	padding: 100px;
-	top: 0px;
-	font-size: 30px;
+ 
+    font-size: 30px;
 }
 
 #reservation form{
-    padding-left: 800px;
-	width: 300px;
+	
+	padding-left: 70%;
+	bottom: 10px;
+	font-size: 35px;
+}
+.bouton {
+	height: 0px;
+    margin-right:50px;
+	text-decoration: none;
+	color: black;
 	
 	
+	
+}
+
+ footer .contenair{
+	 min-height: 600px;
+	 display: flex;
+	 background-color: black;
+	 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+	}
+
  
-	
+ .contenair h3 p{
+	 text-decoration: none;
+	 color: white;
+	 margin-left: 30px;
+	 margin-top: 20px;
+	 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .contenair h4 p{
+	 text-decoration: none;
+	 color: white;
+	 margin:20px 0px 30px 250px;
+	 margin-top: 30px;
+	 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 
+article.contenair1 {
+	 
+	  margin-left: 50%;
+	      
 }
-.bouton{
-	background-color: aqua;
-	width: 50%;
-	border-top: 100px;
-	padding-left: 500px;
-	padding-top: 10px;
 
-}
+
+
 
