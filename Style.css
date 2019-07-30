@@ -212,6 +212,10 @@ header h1{
 	padding-left: 2%;
 }
 
+.essai_reservation input[type="checkbox"]{
+	height: 0;
+}
+
 .essai_reservation input[type=submit]{
 	width: 40%;
 	margin: auto;
@@ -220,6 +224,7 @@ header h1{
 	font-family: 'Playfair Display', serif;
 	font-size: 1.5vw;
 	font-weight: bold;
+	padding: 0;
 }
 
 
