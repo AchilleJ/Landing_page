@@ -95,10 +95,6 @@ header h1{
 
 }
 
-.description_sections .article_texte{
-	width: 50%;
-}
-
 .description_sections .article_texte .largeur_texte{
 	width: 85%;
 	margin: auto;
@@ -276,6 +272,25 @@ header h1{
 .footer a{
 	text-decoration: none;
 	color: white;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 900px){
+	.description_sections section{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.description_sections article{
+		width: 100%;
+	}
+
+	.description_sections section :nth-child(3){
+		order: 4;
+	}
+
+
 }
 
 
