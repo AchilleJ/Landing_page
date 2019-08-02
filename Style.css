@@ -303,7 +303,6 @@ header h1{
 	position: relative;
     margin: 50px 100px 0 0px;
 	padding: 100px;
- 
     font-size: 30px;
 }
 
@@ -311,17 +310,28 @@ header h1{
 	background: transparent;
 	padding-left: 65%;
 	font-size: 45px;
-}
-.bouton {
-	font-size: 20px;
-	background-size: cover;
-	display: block;
-	width: 100px;
-    margin: 50px;
+	
 	
 	
 	
 }
+#reservation form input{
+	
+	border: none;
+	height: 3.5vw;
+	padding-left: 2%;
+	width: 400px;
+
+
+}
+form#bouton {
+	font-size: 10px;
+	background: black;
+	text-align: center;
+	width: 55px
+	
+	
+	}
 
  footer .contenair{
 	 min-height: 600px;
@@ -353,7 +363,21 @@ article.contenair1 {
 
 	      
 }
-
+@media screen and (max-width:900px){
+    .container h3{
+     display: flex;
+     flex-direction: column;}
+     article.container1{
+         width: 100%;
+	 }
+@media screen and (max-width:900px){
+	#reservation form{
+		    display: flex;
+			flex-direction: column;}
+	.bouton{
+				width: 100%;
+	 
+	}
 
 
 
