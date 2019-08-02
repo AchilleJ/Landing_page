@@ -13,16 +13,17 @@
 	<!-- partie achille --> 
 	<header>
 		<img class="fond_header" src="images/image1.png" alt="MCAR MC-I crossover">
-		<div class="logo_title_bouton">
+		<img class="fond_header_mobile" src="images/image1_mobile.png" alt="MCAR MC-I crossover">
+		<div id="logo_title">
 			<img class="logo_mcar" src="images/logo.png" alt="logo MCAR">
 			<h1>
 				Affrontez tous les obstacles avec élégance
 				<p>Nouveau MCAR MC-I crossover</p>
 			</h1>
-			<div class="demandez_essai">
-				<img src="images/bouton_essai.png" alt="demander un essai">
-				<p><a href="#reservation">Demander un Essai</a></p>
-			</div>
+		</div>
+		<div class="demandez_essai">
+			<img src="images/bouton_essai.png" alt="demander un essai">
+			<p><a href="#essai_reservation">Demander un Essai</a></p>
 		</div>
 	</header>
 	<main>
@@ -42,9 +43,9 @@
 				</article>
 			</section>
 
-			<section>
+			<section class="section2">
 				<article>
-					<img src="images/image3.png">
+					<img src="images/image3.png" alt="MCAR_bmw">
 				</article>
 				<article class="article_texte">
 					<div class="largeur_texte">
@@ -88,20 +89,21 @@
 
 		<!--formulaire achille -->
 
-		<section class="essai_reservation">
-			<img src="images/image4.png" alt="MCAR">
+		<section class="essai_reservation" id="essai_reservation">
+			<img class="fond_form" src="images/image4.png" alt="MCAR">
+			<img class="fond_form_mobile" src="images/image4_mobile.png" alt="MCAR">
 			<div class="title_and_form">
 				<h2>Réservez votre essai gratuit</h2>
 				<h3>Nouveau MCAR MC-I Crossover</h3>
 				<form action="https://gmail.us3.list-manage.com/subscribe/post" method="post" target="_blank">
-					<input type="hidden" name="u" value="a5df2f2acec2e8d2fb5c63c34"></input>
-                	<input type="hidden" name="id" value="c2e9c8509b"></input>
+					<input type="hidden" name="u" value="a5df2f2acec2e8d2fb5c63c34">
+                	<input type="hidden" name="id" value="c2e9c8509b">
 
-                	<input type="text" name="FNAME" id="FNAME" placeholder="Prénom*" required></input>
-                	<input type="text" name="LNAME" id="LNAME" placeholder="Nom*" required></input>
-                	<input type="email" name="EMAIL" id="EMAIL" placeholder="Email*" required></input>
-                	<input type="text" pattern="[0-9]{10}" name="MERGE5" id="MERGE5" placeholder="Téléphone*" required></input>
-                	<input type="text" pattern="[0-9]{5}" name="MERGE7" id="MERGE7" placeholder="Code Postal*" required></input>
+                	<input type="text" name="FNAME" id="FNAME" placeholder="Prénom*" required>
+                	<input type="text" name="LNAME" id="LNAME" placeholder="Nom*" required>
+                	<input type="email" name="EMAIL" id="EMAIL" placeholder="Email*" required>
+                	<input type="text" pattern="[0-9]{10}" name="MERGE6" id="MERGE6" placeholder="Téléphone*" required>
+                	<input type="text" pattern="[0-9]{5}" name="MERGE7" id="MERGE7" placeholder="Code Postal*" required>
                 	
                 	<div>
 	                	<input type="checkbox" name="cgu" required>
@@ -143,9 +145,9 @@
 			<div>
 				<h3>Rejoignez-nous</h3>
 				<div class="réseau">
-					<a href=""><img src="images/instagram.png"></a>
-					<a href=""><img src="images/linkedin.png"></a>
-					<a href=""><img src="images/twitter.png"></a>
+					<a href=""><img src="images/instagram.png" alt="instagram"></a>
+					<a href=""><img src="images/linkedin.png" alt="linkedin"></a>
+					<a href=""><img src="images/twitter.png" alt="twitter"></a>
 				</div>
 			</div>
 			</div>

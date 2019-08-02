@@ -2,7 +2,6 @@
 body{
 	width: 100%;
 	margin: 0;
-
 }
 
 img{
@@ -18,19 +17,28 @@ p{
 }
 
 /*header*/
-
-.logo_mcar{
-	display: block;
-	margin: auto;
-	width: 8.5%;
-	margin-bottom: 18%;
+header{
+	position: relative;
 }
 
-.fond_header{
+.logo_mcar{
+	margin: auto;
+	width: 8.5%;
+}
+
+header .fond_header{
 	width: 100%;
 }
 
-header .logo_title_bouton{
+header .fond_header_mobile{
+	display: none;
+}
+
+header{
+	position: relative;
+}
+
+header #logo_title{
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -49,14 +57,17 @@ header h1{
 	font-size: 5.7vw;
 	color: white;
 	line-height: 5.3vw;
-	margin-left: 3%;
+	position: relative;
+	left: 3vw;
+	top: 14vw;
 }
 
 .demandez_essai {
-
-	margin-top: 17.7%;
-	padding-left: 80%;
 	width: 15%;
+	position: absolute;
+	bottom: 0;
+	left: 80vw;
+
 }
 
 .demandez_essai img{
@@ -67,8 +78,8 @@ header h1{
 	font-size: 1.3vw;
 	font-family: 'Playfair Display';
 	width: 100%;
-	position: relative;
-	bottom: 4.2vw;
+	position: absolute;
+	bottom: 0vw;
 	left: 3.4vw;
 }
 
@@ -77,9 +88,7 @@ header h1{
 	color: black;
 }
 
-
 /* 3 description section of the car */
-
 
 .description_sections section{
 	display: flex;
@@ -93,10 +102,6 @@ header h1{
 .description_sections img{
 	width: 100%;
 
-}
-
-.description_sections .article_texte{
-	width: 50%;
 }
 
 .description_sections .article_texte .largeur_texte{
@@ -149,9 +154,6 @@ header h1{
 	width: 60%;
 }
 
-
-
-
 /*section 3*/
 .images_hover{
 	display: flex;
@@ -174,8 +176,12 @@ header h1{
 	position: relative;
 }
 
-.essai_reservation img{
+.essai_reservation .fond_form{
 	width: 100%;
+}
+
+.essai_reservation .fond_form_mobile{
+	display: none;
 }
 
 .essai_reservation .title_and_form{
@@ -227,7 +233,6 @@ header h1{
 	padding: 0;
 }
 
-
 /*footer achille*/
 
  .footer .elements_footer{
@@ -278,6 +283,178 @@ header h1{
 	color: white;
 }
 
+/*media queries*/
+
+@media screen and (max-width: 900px){
+
+	/*header*/
+
+	header .fond_header{
+		display: none;
+	}
+
+	header .fond_header_mobile{
+		display: block;
+		width: 100%;
+	}
+
+	.logo_mcar{
+		width: 13%;
+	}
+
+	header h1{
+		width: 90%;
+		font-size: 7.5vw;
+		line-height: 7vw;
+		position: relative;
+	}
+
+	.demandez_essai {
+		width: 25%;
+		left: 37.5vw;
+	}
+
+	.demandez_essai p{
+		font-size: 2.1vw;
+		left: 5.8vw;
+	}
+
+	/*description sections*/
+
+	.description_sections section{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.description_sections .section2 :nth-child(1){ order: 2	}
+	.description_sections .section2 :nth-child(2){ order: 1	}
+
+	.description_sections .article_texte .largeur_texte{
+		width: 100%;
+	}
+
+	.description_sections article{
+		width: 85%;
+		margin: auto;
+	}
+
+	.description_sections img{
+		margin: auto;
+		width: 100%;
+	}
+
+	.images_hover a{
+		opacity: 1;
+	}
+
+	/*form*/
+
+	.essai_reservation .fond_form{
+		display: none;
+	}
+
+	.essai_reservation .fond_form_mobile{
+		display: block;
+		width: 100%;
+	}
+
+	.essai_reservation h2{
+		margin-left: 0;
+		text-align: center;
+		font-size: 6.5vw;
+	}
+
+	.essai_reservation h3{
+		margin-left: 0;
+		text-align: center;
+		font-size: 4.5vw;
+	}
+
+	.essai_reservation form{
+		margin: auto;
+		width: 60%;
+		opacity: 0.95;
+	}
+
+	.essai_reservation input{
+		height: 7.5vw;
+	}
+
+	.essai_reservation input[type=submit]{
+		font-size: 2vw;
+	}
+
+}
+
+@media screen and (max-width: 550px){
+
+	.description_sections h2{
+		font-size: 20pt;
+	}
+
+	.description_sections h3{
+		font-size: 8pt;
+	}
+
+	.description_sections p{
+		font-size: 10pt;
+	}
+
+	.essai_reservation h2, .essai_reservation h3{
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}	
+
+	.essai_reservation form{
+		width: 100%;
+	}
+
+	.essai_reservation input[type=text],.essai_reservation input[type=email]{
+		width: 70%;
+		margin: 2% auto;
+	}
+
+	.essai_reservation input[type=checkbox]{
+		width: 1%;
+	}
+
+	.essai_reservation div{
+		margin: auto;
+		font-size: 3vw;
+		height: 10vw;
+	}
+
+	.footer .elements_footer{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer .a_propos{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer .conditions{
+		width: 100%;
+	}
+
+	.footer .réseau{
+		width: 40%;
+	}
+
+	.footer li{
+	  	font-size: 10pt;
+	}
+
+	.footer h3{
+	 	font-size: 12pt
+	}
+
+	.footer img{
+		width: 80%;
+	}
+}
 
 /*main*/
 #reservation {
