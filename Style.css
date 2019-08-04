@@ -235,7 +235,7 @@ header h1{
 
 /*footer achille*/
 
- .footer .elements_footer{
+footer .elements_footer{
  	display: flex;
  	flex-direction: row;
  	justify-content: space-between;
@@ -243,42 +243,42 @@ header h1{
  	margin: auto;
  }
 
- .footer{
+footer{
  	background-color: black;
  	padding: 2% 0%;
  }
 
- .footer .a_propos{
+footer .a_propos{
  	display: flex;
  	flex-direction: row;
  	justify-content: space-between;
  	width: 45%;
  }
 
- .footer ul{
+footer ul{
  	color: white;
  	list-style: none;
  	padding: 0;
  }
 
-  .footer li{
+footer li{
   	padding-bottom: 3%;
  }
 
- .footer h3{
+footer h3{
  	color: white;
  	font-size: 16pt
  }
 
- .footer .conditions{
+footer .conditions{
  	width: 50%;
  }
 
-.footer .réseau{
+footer .réseau{
 	display: flex;
 	justify-content: space-between;
 }
-.footer a{
+footer a{
 	text-decoration: none;
 	color: white;
 }
@@ -424,151 +424,34 @@ header h1{
 		height: 10vw;
 	}
 
-	.footer .elements_footer{
+	footer .elements_footer{
 		display: flex;
 		flex-direction: column;
 	}
 
-	.footer .a_propos{
+	footer .a_propos{
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 	}
 
-	.footer .conditions{
+	footer .conditions{
 		width: 100%;
 	}
 
-	.footer .réseau{
+	footer .réseau{
 		width: 40%;
 	}
 
-	.footer li{
+	footer li{
 	  	font-size: 10pt;
 	}
 
-	.footer h3{
+	footer h3{
 	 	font-size: 12pt
 	}
 
-	.footer img{
+	footer img{
 		width: 80%;
 	}
-}
-
-/*main*/
-#reservation {
-	background-image: url("images/image4.png");
-	background-repeat: no-repeat; 
-	background-size: 100%;
-	min-height: 700px;
-	
-}
-	
-#reservation h2{
-    font-size:  55px;
-	color: black;
-	font-family:'Playfair Display', serif;
-	margin: 0050px;
-	position: relative;
-	top: 110px;
-	left: 0px;
-	line-height: 30px;
-
-}
-#reservation p{
-	position: relative;
-    margin: 50px 100px 0 0px;
-	padding: 100px;
-    font-size: 30px;
-}
-
-#reservation form{
-	background: transparent;
-	padding-left: 60%;
-	display: flex;
-	flex-direction: column;
-	
-	
-}
-#reservation form input{
-	
-	border: none;
-	height: 2.5vw;
-	padding-left: 2%;
-	width: 400px;
-	
-	}
-#reservation form .bouton{
-
-	
-	text-align: center;
-	width: 55px;
-		
-
-}	
-#reservation form .checkbox {
-	display: flex;
-	font-size: 10px;
-	
-	text-align: center;
-	width: 155px
-	
-	
-	}
-
- footer .contenair{
-	 min-height: 600px;
-	 display: flex;
-	 background-color: black;
-	 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-	}
-
- 
- .contenair h3 p{
-	 text-decoration: none;
-	 color: white;
-	 margin-left: 30px;
-	 margin-top: 20px;
-	 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- }
- .contenair h4 p{
-	 text-decoration: none;
-	 color: white;
-	 margin:20px 0px 30px 250px;
-	 margin-top: 30px;
-	 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
-
-article.contenair1 {
-	 
-	  display: flex;
-	  flex-direction: row;
-	  margin: 80px 10px 700px 400px;
-
-	      
-}
-@media screen and (max-width:500px){
-     #reservation{
-     display: flex;
-     flex-direction: column;
-	 width : 100%; 
-}
-	 
-
-
-
-
-
-@media screen and (max-width:500px){
-    footer.container {
-     display: flex;
-     flex-direction: column;
-     width : 100%;
-}
-
-	 
-	
-
-
-
 }
