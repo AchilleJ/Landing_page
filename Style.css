@@ -67,6 +67,8 @@ header h1{
 	position: absolute;
 	bottom: 0;
 	left: 80vw;
+	position: fixed;
+	z-index: 1;
 
 }
 
@@ -174,6 +176,7 @@ header h1{
 
 .essai_reservation{
 	position: relative;
+	z-index: 2;
 }
 
 .essai_reservation .fond_form{
@@ -246,6 +249,9 @@ footer .elements_footer{
 footer{
  	background-color: black;
  	padding: 2% 0%;
+ 	position: absolute;
+ 	width: 100%;
+ 	z-index: 2;
  }
 
 footer .a_propos{
