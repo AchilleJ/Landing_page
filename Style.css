@@ -18,49 +18,36 @@ p{
 
 /*header*/
 header{
-	position: relative;
-}
-
-.logo_mcar{
-	margin: auto;
-	width: 8.5%;
-}
-
-header .fond_header{
 	width: 100%;
+	min-height: 100vh;
+	background-image: url(images/image1.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
 }
 
-header .fond_header_mobile{
-	display: none;
-}
-
-header{
-	position: relative;
-}
-
-header #logo_title{
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-
-
-header h1 p{
-	font-weight: normal;
-	margin: 0;
-	font-size: 4.5vw;
-	font-family: 'Playfair Display';
+header .logo_mcar{
+	margin: 0 auto;
+	width: 150px;
 }
 
 header h1{
 	width: 80%;
 	font-size: 5.7vw;
 	color: white;
-	line-height: 5.3vw;
-	position: relative;
-	left: 3vw;
-	top: 14vw;
+	line-height: 6vw;
+	margin: auto 0 auto 75px;
+	text-shadow: 0px 0px 3px #444;
 }
+
+header h1 p{
+	font-weight: normal;
+	margin: 0;
+	font-size: 4.5vw;
+	font-family: 'Playfair Display';
+	padding-bottom: 80px;
+}
+
 
 .demandez_essai {
 	width: 15%;
@@ -73,11 +60,11 @@ header h1{
 }
 
 .demandez_essai img{
-	width: 100%;
+	width: 280px;
 }
 
 .demandez_essai p{
-	font-size: 1.3vw;
+	font-size: 23px;
 	font-family: 'Playfair Display';
 	width: 100%;
 	position: absolute;
@@ -175,8 +162,12 @@ header h1{
 /*form achille*/
 
 .essai_reservation{
-	position: relative;
-	z-index: 2;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(images/image4.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
 }
 
 .essai_reservation .fond_form{
@@ -189,21 +180,22 @@ header h1{
 
 .essai_reservation .title_and_form{
 	width: 100%;
-	position: absolute;
-	top: 0;
 }
 
 .essai_reservation h2{
+	text-shadow: 0px 0px 4px #fff;
+	margin-top: 30px;
 	font-size: 4.5vw;
 	margin-bottom: 0;
-	margin-left: 4%;
+	margin-left: 80px;
 }
 
 .essai_reservation h3{
+	text-shadow: 0px 0px 4px #fff;
 	font-size: 2.5vw;
 	font-weight: normal;
 	margin-top: 0;
-	margin-left: 4%;
+	margin-left: 80px;
 }
 
 .essai_reservation form{
@@ -214,26 +206,29 @@ header h1{
 	margin-right: 5%;
 }
 
-.essai_reservation input{
+.essai_reservation .input_text{
 	border: none;
-	margin-bottom: 5%;
-	height: 3.5vw;
+	margin-bottom: 30px;
+	height: 54px;
 	padding-left: 2%;
 }
 
-.essai_reservation input[type="checkbox"]{
-	height: 0;
-}
-
 .essai_reservation input[type=submit]{
-	width: 40%;
+	cursor: pointer;
 	margin: auto;
 	background-color: black;
 	color: white;
-	font-family: 'Playfair Display', serif;
-	font-size: 1.5vw;
-	font-weight: bold;
-	padding: 0;
+	font-size: 20px;
+	padding: 15px;
+	margin-top: 25px;
+	border: 2px solid black;
+}
+
+.essai_reservation input[type=submit]:hover{
+	transition: 0.2s ease-out;
+	background-color: white;
+	color: black;
+	border: 2px solid black;
 }
 
 /*footer achille*/
@@ -291,42 +286,40 @@ footer a{
 
 /*media queries*/
 
+@media screen and (max-height: 800px) {
+	header{
+		min-height: 800px;
+	}
+
+	.essai_reservation{
+		min-height: 800px;
+	}
+}
+
 @media screen and (max-width: 900px){
 
 	/*header*/
-
-	header .fond_header{
-		display: none;
+	header{
+		background-image: url(images/image1_mobile.jpg);
 	}
 
-	header .fond_header_mobile{
-		display: block;
-		width: 100%;
-	}
-
-	.logo_mcar{
-		width: 13%;
+	header .logo_mcar{
+		width: 115px;
 	}
 
 	header h1{
+		margin: auto;
 		width: 90%;
-		font-size: 7.5vw;
-		line-height: 7vw;
-		position: relative;
+		font-size: 60px;
+		line-height: 62px;
 	}
 
-	.demandez_essai {
-		width: 25%;
-		left: 37.5vw;
-	}
-
-	.demandez_essai p{
-		font-size: 2.1vw;
-		left: 5.8vw;
+	header h1 p{
+		font-size: 32px;
+		line-height: 45px;
 	}
 
 	/*description sections*/
-
 	.description_sections section{
 		display: flex;
 		flex-direction: column;
@@ -354,25 +347,20 @@ footer a{
 	}
 
 	/*form*/
-
-	.essai_reservation .fond_form{
-		display: none;
+	.essai_reservation{
+		background-image: url(images/image4_mobile.jpg);
 	}
 
-	.essai_reservation .fond_form_mobile{
-		display: block;
-		width: 100%;
+	.essai_reservation h2,.essai_reservation h3{
+		margin-left: 0;
+		text-align: center;		
 	}
 
 	.essai_reservation h2{
-		margin-left: 0;
-		text-align: center;
 		font-size: 6.5vw;
 	}
 
 	.essai_reservation h3{
-		margin-left: 0;
-		text-align: center;
 		font-size: 4.5vw;
 	}
 
@@ -382,18 +370,34 @@ footer a{
 		opacity: 0.95;
 	}
 
-	.essai_reservation input{
-		height: 7.5vw;
-	}
-
 	.essai_reservation input[type=submit]{
-		font-size: 2vw;
+		font-size: 20px;
 	}
 
 }
 
 @media screen and (max-width: 550px){
+	/*header*/
+	header{
+		min-height: 550px;
+	}
 
+	header .logo_mcar{
+		width: 95px;
+	}
+
+	header h1{
+		font-size: 42px;
+		line-height: 50px;
+	}
+
+	header h1 p{
+		font-size: 25px;
+		line-height: 33px;
+	}	
+
+
+	/*description sections*/
 	.description_sections h2{
 		font-size: 20pt;
 	}
@@ -406,13 +410,41 @@ footer a{
 		font-size: 10pt;
 	}
 
-	.essai_reservation h2, .essai_reservation h3{
-		margin-top: 1%;
-		margin-bottom: 1%;
+	/*form*/
+	.essai_reservation{
+		min-height: 550px;
+	}
+
+	.essai_reservation .title_and_form{
+		margin: initial;
+	}
+
+	.essai_reservation h2,.essai_reservation h3{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.essai_reservation h2{
+		font-size: 34px;
+	}
+
+	.essai_reservation h3{
+		font-size: 25px;
 	}	
 
 	.essai_reservation form{
 		width: 100%;
+	}
+
+	.essai_reservation .input_text{
+		height: 37px;
+	}
+
+	.essai_reservation input[type=submit]{
+		padding: 10px;
+		margin: auto;
+		font-size: 16px;
+		width: 203px;
 	}
 
 	.essai_reservation input[type=text],.essai_reservation input[type=email]{
@@ -460,4 +492,16 @@ footer a{
 	footer img{
 		width: 80%;
 	}
+}
+
+@media screen and (max-width: 350px){
+	/*header*/
+	header h1{
+		font-size: 35px;
+		line-height: 40px;
+	}
+
+	header h1 p{
+		font-size: 22px;
+	}	
 }
