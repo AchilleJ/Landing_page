@@ -451,11 +451,7 @@ footer a{
 		width: 70%;
 		margin: 2% auto;
 	}
-
-	.essai_reservation input[type=checkbox]{
-		width: 1%;
-	}
-
+	
 	.essai_reservation div{
 		margin: auto;
 		font-size: 3vw;
